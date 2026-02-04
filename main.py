@@ -661,7 +661,8 @@ if __name__ == '__main__':
         print("=" * 60)
         runner = web.AppRunner(app)
         await runner.setup()
-        port = int(os.environ.get('PORT', 30443))
+        # Try to get port from SERVER_PORT (Pterodactyl) or PORT, default to 30443
+        port = int(os.environ.get('SERVER_PORT', os.environ.get('PORT', 30443)))
         site = web.TCPSite(runner, '0.0.0.0', port)
         await site.start()
         print(f"Server running at http://0.0.0.0:{port}")
