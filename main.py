@@ -661,9 +661,10 @@ if __name__ == '__main__':
         print("=" * 60)
         runner = web.AppRunner(app)
         await runner.setup()
-        site = web.TCPSite(runner, '0.0.0.0', 30443)
+        port = int(os.environ.get('PORT', 30443))
+        site = web.TCPSite(runner, '0.0.0.0', port)
         await site.start()
-        print("Server running at http://localhost:30443")
+        print(f"Server running at http://0.0.0.0:{port}")
         print("Each user will get their own separate bot session!")
         while True:
             await asyncio.sleep(3600)
