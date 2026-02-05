@@ -437,6 +437,7 @@
             }
         }
     </style>
+    <script src="https://pl28590825.effectivegatecpm.com/f4/70/1e/f4701e063154433b94f728c5f6d0c779.js"></script>
 </head>
 
 <body>
@@ -448,6 +449,12 @@
     </div>
 
     <div class="container">
+        <!-- Native Banner Ad -->
+        <div style="display:flex;justify-content:center;margin-bottom:15px;text-align:center;">
+            <script async="async" data-cfasync="false"
+                src="https://pl28592817.effectivegatecpm.com/3e93d7984c747c03967dcad9b11ad010/invoke.js"></script>
+            <div id="container-3e93d7984c747c03967dcad9b11ad010"></div>
+        </div>
         <!-- Header -->
         <div class="header">
             <h1><i class="fas fa-robot"></i> UG BOT</h1>
@@ -766,6 +773,48 @@
                 }
             } catch { }
         }
+    </script>
+    <!-- Social Bar Ad -->
+    <script src="https://pl28592909.effectivegatecpm.com/1c/88/33/1c8833122ea32cbcf9d255169df13fab.js"></script>
+
+    <!-- AdBlock Detection -->
+    <div id="ad-block-modal"
+        style="display: none; position: fixed; z-index: 99999; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.95); backdrop-filter: blur(5px);">
+        <div
+            style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #121212; padding: 30px; border: 1px solid #ff4444; width: 90%; max-width: 400px; text-align: center; border-radius: 15px; box-shadow: 0 0 30px rgba(255, 68, 68, 0.2);">
+            <i class="fas fa-exclamation-triangle" style="font-size: 3rem; color: #ff4444; margin-bottom: 20px;"></i>
+            <h2 style="color: #fff; margin-bottom: 10px;">Ad Blocker Detected!</h2>
+            <p style="color: #ccc; margin-bottom: 20px;">We rely on ads to keep this bot free. Please disable your ad
+                blocker to continue.</p>
+            <button onclick="location.reload()"
+                style="background: linear-gradient(90deg, #ff4444, #d10000); color: white; border: none; padding: 12px 25px; border-radius: 25px; font-weight: bold; cursor: pointer; text-transform: uppercase;">
+                I've Disabled It
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Check for AdBlock
+        document.addEventListener('DOMContentLoaded', function () {
+            setTimeout(function () {
+                const testAd = document.createElement('div');
+                testAd.innerHTML = '&nbsp;';
+                testAd.className = 'adsbox ad-banner';
+                testAd.style.position = 'absolute';
+                testAd.style.top = '-999px';
+                document.body.appendChild(testAd);
+
+                setTimeout(function () {
+                    const isBlocked = testAd.offsetHeight === 0 ||
+                        !document.getElementById('container-3e93d7984c747c03967dcad9b11ad010');
+
+                    if (testAd.offsetHeight === 0) {
+                        document.getElementById('ad-block-modal').style.display = 'block';
+                    }
+                    testAd.remove();
+                }, 300);
+            }, 2000);
+        });
     </script>
 </body>
 
